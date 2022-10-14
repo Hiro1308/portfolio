@@ -101,10 +101,12 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 80%;
 }
 
 li {
   display: inline;
+  margin-right: 20px;
 }
 
 li > a {
@@ -112,4 +114,128 @@ li > a {
   color: white;
   font-size: 19px;
   text-decoration: none;
+}
+
+.about {
+  padding-top: 8%;
+  width: 80%;
+  margin: auto;
+}
+
+.about-header {
+  font-family: "Raleway-semibold";
+  font-size: 42px;
+}
+
+.separator-bar {
+  background: #444649;
+  height: 4px;
+  margin: 25px 0 75px 0;
+  width: 70px
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  align-items: center;
+}
+
+.graph-skills {
+  margin: 20px;
+  width: 50%;
+  height: 100%;
+}
+
+.name-skills {
+  font-family: "Raleway-semibold";
+  align-items: unset;
+  text-align: right;
+  margin-right: 20px;
+  padding-top: 10px;
+}
+
+.name-skills > div {
+  margin-bottom: 5px;
+  height: 25px;
+}
+
+.skills-table {
+  min-width: 400px;
+  border-left: solid 1px;
+  padding-top: 10px;
+}
+
+.skills-table > div {
+  font-family: "Raleway";
+  color: white;
+  background-color: #c6a3ff;
+  height: 25px;
+  margin-bottom: 5px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.who-am-i {
+  margin: 20px;
+  width: 50%;
+}
+
+.who-am-i > div > a {
+  color: #a579ed;
+  text-decoration: none;
+}
+
+.who-am-i > div:nth-child(2){
+  font-family: "Raleway-semibold";
+  font-size: 22px;
+}
+
+.who-am-i > div:nth-child(3){
+  color: #616161;
+  margin-top: 10px;
+  font-size: 18px;
+  width: 80%;
+}
+
+.profile-image > img {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.icon-container{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #c6a3ff;
+  margin: auto;
+}
+
+.icon-container > img{
+  width: 75px;
+  display: block;
+  margin: auto;
+  padding-top: 20%;
+}
+
+.skill-item {
+  width: 25%;
+  height: 15vw;
+  text-align: center;
+}
+
+.skill-item > div:nth-child(2){
+  font-family: "Raleway-semibold";
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+.skill-item > div:nth-child(3){
+  color: #616161;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 0 20px;
 }
