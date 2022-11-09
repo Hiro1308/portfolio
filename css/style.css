@@ -325,3 +325,17 @@ li > a {
 .buttonViewProject > i{
   padding-left: 20px;
 }
+
+.career {
+  padding-top: 8%;
+  width: 80%;
+  margin: auto;
+}
+.table-career {
+  margin: auto;
+  align-items: flex-start;
+}
+
+.studypath, .workpath {
+  margin: 0 auto;
+}
