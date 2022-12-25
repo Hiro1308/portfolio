@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styleStudyBoard.css">
   <link rel="stylesheet" href="css/styleWorkBoard.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </style>
   
@@ -25,32 +26,33 @@
         <div class="presentationText">
           Hi There, I'm <span>Pablo Gómez</span> and I'm a full-stack developer.
         </div>
-        <div class="buttonViewMyWork">
-          <span>Find more about me</span>
-          <i class="material-icons">arrow_forward</i>
-        </div>
+        <a href="#menu">
+          <div class="buttonViewMyWork">
+            <span>Find more about me</span>
+            <i class="material-icons">arrow_forward</i>
+          </div>
+        </a>
       </div>
     </section>
   </div>
   <!--MENU-->
-  <div>
+  <div id="menu">
     <nav class="flex ">
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#news">ABOUT</a></li>
-        <li><a href="#contact">PROJECTS</a></li>
-        <li><a href="#about">CAREER</a></li>
-        <li><a href="#about">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#career">CAREER</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </div>
   <!--ABOUT-->
-  <section class="about">
+  <section id="about" class="about">
     <div class="flex">
       <div class="about-header">ABOUT</div>
       <div class="separator-bar"></div>
       <div class="skills">
-        <div class="flex who-am-i">
+        <div class="flex who-am-i" data-aos="fade-right" data-aos-duration="1400">
           <figure class="profile-image">
             <img src="images/me.jpg">
           </figure>
@@ -60,7 +62,7 @@
             I love facing new challenges and learn things about them. I also have a deep interest in automating processes in order to improve my work.
           </div>
         </div>
-        <div class="skills graph-skills">
+        <div class="skills graph-skills" data-aos="fade-left" data-aos-duration="1400">
           <div class="name-skills flex">
             <div>HTML & CSS</div>
             <div>JavaScript</div>
@@ -85,7 +87,7 @@
           </div>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills" data-aos="fade-up" data-aos-duration="1400">
         <div class="skill-item">
           <div class="icon-container">
             <img src="images/muscle.png">
@@ -118,11 +120,11 @@
     </div>
   </section>
   <!--PROJECTS-->
-  <section class="projects">
+  <section id="projects" class="projects">
     <div class="flex">
       <div class="about-header">PROJECTS</div>
       <div class="separator-bar"></div>
-      <div class="projects-table">
+      <div class="projects-table" data-aos="fade-up" data-aos-duration="1400">
         <div class="project" style="background-image: url(images/lvhapp.jpg);">
           <div class="project-text">
             <h3>LVH APP</h3>
@@ -157,16 +159,16 @@
     </div>
   </section>
   <!--CARREER-->
-  <section class="career">
+  <section id="career" class="career">
     <div class="flex">
       <div class="about-header">CAREER</div>
       <div class="separator-bar"></div>
     </div>
     <div class="skills table-career">
-      <div class="studypath">
+      <div class="studypath" data-aos="fade-right" data-aos-duration="1400">
         <article class="study">
           <header class="study-header">
-            <h1 class="study__title"><span class="study__title--top">STUDY</span>
+            <h1 class="study__title"><span class="study__title--top">ACADEMICS</span>
           </header>
           
           <main class="study__profiles">
@@ -201,7 +203,7 @@
             </article>
           </main>
       </div>
-      <div class="workpath">
+      <div class="workpath" data-aos="fade-left" data-aos-duration="1400">
         <article class="work">
           <header class="work-header">
             <h1 class="work__title"><span class="work__title--top">work</span>
@@ -211,7 +213,7 @@
             <a href="https://www.liveclicker.com">
               <article class="work__profile">
                 <img src="images/liveclicker.png" class="work__picture">
-                <span class="work__name">Liveclicker<span class="work__place">Escalation Engineer</span></span>
+                <span class="work__name">Liveclicker<span class="work__place">Technical Support Specialist (2021) > Escalation Engineer (2022)</span></span>
                 <span class="work__value">2021</span>
               </article>
             </a>
@@ -226,6 +228,32 @@
       </div>
     </div>
   </section>
+  <!--CONTACT-->
+  <section id="contact" class="contact">
+    <div class="flex">
+      <div class="contact-header about-header">CONTACT</div>
+      <div class="separator-bar"></div>
+      <div class="contact-form">
+        <p>Have a question or want to work together?</p>
+        <form  id="contact-form" style="animation-delay: 0.5s;">
+          <input placeholder="Name" type="text" name="name" required="">
+          <input placeholder="Your email" type="email" name="email" required="">
+          <textarea placeholder="Your Message" type="text" name="message" spellcheck="false"></textarea>
+          <input class="button" type="submit" id="submit" value="SUBMIT">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--FOOTER-->
+  <footer>
+    <div class="social-media-row">
+      
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 <script src="js/script.js"></script>

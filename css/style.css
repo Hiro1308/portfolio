@@ -12,6 +12,9 @@
   src: url("../fonts/Raleway-Bold.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body { 
   margin: 0;
@@ -114,7 +117,7 @@ li > a {
 }
 
 .about {
-  padding-top: 8%;
+  padding: 6% 0;
   width: 80%;
   margin: auto;
 }
@@ -243,6 +246,11 @@ li > a {
   padding: 0 20px;
 }
 
+.projects {
+  background-color: #efefef;
+  padding: 6% 0;
+}
+
 .projects-table {
   display: flex;
   flex-direction: row;
@@ -327,7 +335,7 @@ li > a {
 }
 
 .career {
-  padding-top: 8%;
+  padding: 6% 0;
   width: 80%;
   margin: auto;
 }
@@ -338,4 +346,236 @@ li > a {
 
 .studypath, .workpath {
   margin: 0 auto;
+}
+
+.contact {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  background-color: #46397c;
+  box-shadow: inset 0 10px 30px -6px rgb(0 0 0 / 40%);
+  margin: auto;
+}
+
+.contact > div {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: white;
+}
+
+.contact-form > p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header {
+  color: white;
+}
+
+.contact > div > .separator-bar {
+  background: white;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form > input {
+  height: 30px;
+  margin-bottom: 1%;
+  background-color: #6e5997;
+  border: unset;
+  color: white;
+}
+
+#contact-form > textarea {
+  height: 80px;
+  margin-bottom: 1%;
+  resize: none;
+  background-color: #6e5997;
+  border: unset;
+
+}
+
+input::placeholder, textarea::placeholder{
+  color:white;
+}
+
+#submit {
+  width: 130px;
+  margin-left: 72%;
+}
+
+footer {
+
+}
+
+.social-media-row {
+  
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 481px) {
+  .presentationText {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  li > a {
+    font-size: 3vw;
+  }
+
+  .about {
+    padding-top: 30vw;
+    padding-bottom: 0;
+  }
+
+  .about > .flex > .skills {
+    flex-flow: column;
+  }
+
+  .about-header {
+    font-size: 9vw;
+  }
+
+  .separator-bar {
+    margin-bottom: 10px;
+  }
+
+  .profile-image > img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .who-am-i {
+    width: 100%;
+  }
+
+  .who-am-i > div:nth-child(3) {
+    text-align: justify;
+    font-size: 4vw;
+  }
+
+  .graph-skills {
+    width: 100%;
+    height: 100%;
+  }
+
+  .name-skills {
+    width: 40%;
+    font-size: 3.5vw;
+  }
+
+  .skills-table {
+    width: 60%;
+    min-width: 60%;
+  }
+
+  .about > .flex > .skills:nth-child(4) {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .skill-item {
+    width: 50%;
+    height: 80vw;
+  }
+
+  .icon-container {
+    width: 24vw;
+    height: 24vw;
+  }
+
+  .icon-container > img {
+    width: 12vw;
+  }
+
+  .skill-item > div:nth-child(2) {
+    font-size: 5vw;
+  }
+
+  .skill-item > div:nth-child(3) {
+    font-size: 4vw;
+  }
+
+  .projects {
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+  }
+
+  .projects .separator-bar  {
+    margin-bottom: 30px;
+  }
+
+  .projects-table {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .project {
+    width: 80%;
+    height: 64vw;
+  }
+
+  .career {
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+  }
+
+  .career .separator-bar  {
+    margin-bottom: 30px;
+  }
+
+  .table-career {
+    flex-direction: column;
+  }
+
+  .studypath {
+    margin-bottom: 10vw;
+  }
+
+  .study__name, .work__name {
+    font-size: 3vw !important;
+  }
+
+  .study__place, .work__place {
+    font-size: 2vw !important;
+  }
+
+  .study__picture, .work__picture {
+    width: 8vw !important;
+    height: 8vw !important;
+  }
+
+  .study__value, .work__value {
+    font-size: 5vw !important;
+  }
+
+  .study .study-header, .work .work-header {
+    height: 25vw !important;
+  }
+
+  .contact {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  #submit {
+    width: 100%;
+    margin-left: 0;
+  }
+  
 }
