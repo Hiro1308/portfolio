@@ -158,6 +158,7 @@ li > a {
   text-align: right;
   margin-right: 20px;
   padding-top: 10px;
+  font-size: 1vw;
 }
 
 .name-skills > div {
@@ -229,7 +230,6 @@ li > a {
 
 .skill-item {
   width: 25%;
-  height: 15vw;
   text-align: center;
 }
 
