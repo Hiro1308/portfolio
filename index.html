@@ -49,8 +49,10 @@
   <!--ABOUT-->
   <section id="about" class="about">
     <div class="flex">
-      <div class="about-header">ABOUT</div>
-      <div class="separator-bar"></div>
+      <div data-aos="fade-down" data-aos-duration="1400">
+        <div class="about-header">ABOUT</div>
+        <div class="separator-bar"></div>
+      </div>
       <div class="skills">
         <div class="flex who-am-i" data-aos="fade-right" data-aos-duration="1400">
           <figure class="profile-image">
@@ -121,9 +123,11 @@
   </section>
   <!--PROJECTS-->
   <section id="projects" class="projects">
-    <div class="flex">
-      <div class="about-header">PROJECTS</div>
-      <div class="separator-bar"></div>
+    <div class="flex" data-aos="fade-down" data-aos-duration="1400">
+      <div data-aos="fade-down" data-aos-duration="1400">
+        <div class="about-header">PROJECTS</div>
+        <div class="separator-bar"></div>
+      </div>
       <div class="projects-table" data-aos="fade-up" data-aos-duration="1400">
         <div class="project" style="background-image: url(images/lvhapp.jpg);">
           <div class="project-text">
@@ -160,7 +164,7 @@
   </section>
   <!--CARREER-->
   <section id="career" class="career">
-    <div class="flex">
+    <div class="flex" data-aos="fade-down" data-aos-duration="1400">
       <div class="about-header">CAREER</div>
       <div class="separator-bar"></div>
     </div>
@@ -231,14 +235,16 @@
   <!--CONTACT-->
   <section id="contact" class="contact">
     <div class="flex">
-      <div class="contact-header about-header">CONTACT</div>
-      <div class="separator-bar"></div>
-      <div class="contact-form">
+      <div data-aos="fade-down" data-aos-duration="1400">
+        <div class="contact-header about-header">CONTACT</div>
+        <div class="separator-bar"></div>
+      </div>
+      <div class="contact-form" data-aos="fade-in" data-aos-duration="1400" >
         <p>Have a question or want to work together?</p>
-        <form  id="contact-form" style="animation-delay: 0.5s;">
+        <form  id="contact-form" style="animation-delay: 0.5s;" action="https://formsubmit.co/pablogomez71308@gmail.com" method="POST">
           <input placeholder="Name" type="text" name="name" required="">
           <input placeholder="Your email" type="email" name="email" required="">
-          <textarea placeholder="Your Message" type="text" name="message" spellcheck="false"></textarea>
+          <textarea placeholder="Your Message" type="text" name="message" spellcheck="false" required=""></textarea>
           <input class="button" type="submit" id="submit" value="SUBMIT">
         </form>
       </div>

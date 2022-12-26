@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway";
+  overflow-x:hidden;
 }
 
 .flex {
@@ -130,7 +131,7 @@ li > a {
 .separator-bar {
   background: #444649;
   height: 4px;
-  margin: 25px 0 75px 0;
+  margin: 25px auto 75px auto;
   width: 70px
 }
 
@@ -158,7 +159,7 @@ li > a {
   text-align: right;
   margin-right: 20px;
   padding-top: 10px;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 .name-skills > div {
@@ -377,7 +378,7 @@ li > a {
   color: white;
 }
 
-.contact > div > .separator-bar {
+.contact > div > div > .separator-bar {
   background: white;
 }
 
@@ -436,6 +437,7 @@ footer {
   .about {
     padding-top: 30vw;
     padding-bottom: 0;
+    width: 100%;
   }
 
   .about > .flex > .skills {
