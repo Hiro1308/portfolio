@@ -401,7 +401,7 @@ li > a {
   resize: none;
   background-color: #6e5997;
   border: unset;
-
+  color: white;
 }
 
 input::placeholder, textarea::placeholder{
