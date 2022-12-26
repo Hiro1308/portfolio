@@ -413,12 +413,35 @@ input::placeholder, textarea::placeholder{
   margin-left: 72%;
 }
 
-footer {
-
+.buttonReturnPortfolio {
+  text-align: center;
+  line-height: 18pt;
+  color: #fff;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.5s;
+  font-size: 16pt;
+  margin-top: 20px;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s;
 }
 
-.social-media-row {
-  
+.buttonReturnPortfolio i {
+  width: 4vw;
+}
+
+.buttonReturnPortfolio:hover {
+  background-color: #a579ed;
+  border-color: #a579ed;
+}
+
+a {
+  text-decoration: none;
 }
 
 
